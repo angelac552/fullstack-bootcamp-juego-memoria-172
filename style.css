@@ -19,7 +19,7 @@ h1 {
 .carta {
     width: 100px;
     height: 100px;
-    background-color: #2196f3;
+    background-color: green;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,6 +27,7 @@ h1 {
     color: white;
     cursor: pointer;
     border-radius: 10px;
+    
 }
 
 .carta.volteada {

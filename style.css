@@ -6,6 +6,14 @@ body {
 
 h1 {
     color: #333;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+p{
+    color: green;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
 }
 
 .tablero {
@@ -13,7 +21,7 @@ h1 {
     grid-template-columns: repeat(3, 100px);
     gap: 10px;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .carta {

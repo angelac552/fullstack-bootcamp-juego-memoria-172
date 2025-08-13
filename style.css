@@ -99,3 +99,17 @@ p{
     pointer-events: none; /* No se pueden clickear */
     opacity: 0.5; /* Se ven transparentes */
 }
+
+.movimiento{
+    animation: movimientoCartasCoincidencia 1s ease infinite;
+
+}
+
+@keyframes movimientoCartasCoincidencia {
+    0% {transform: scale(1.0);}
+    25% {transform: scale(1.0020);}
+    50% {transform: scale(1.030);}
+    75% {transform: scale(1.0020);}
+    100% {transform: scale(1.0);}
+    
+}

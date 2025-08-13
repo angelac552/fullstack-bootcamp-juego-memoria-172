@@ -30,7 +30,7 @@ function iniciarJuego() {
 function voltearCarta() {
     if (bloqueo || this.classList.contains("volteada")) return;
 
-    this.textContent = this.dataset.valor;
+    this.textContent = this.dataset.valor
     this.classList.add("volteada");
 
     if (!primeraCarta) {
@@ -40,10 +40,14 @@ function voltearCarta() {
         actualizarContador();
 
         if (primeraCarta.dataset.valor === this.dataset.valor) {
+            console.log("coincidencia")
+            primeraCarta.classList.add('movimiento')
+            this.classList.add('movimiento')
              sonidoExito.play().catch(error => {
                 console.log("No se pudo reproducir el sonido:", error);
             });
             primeraCarta = null;
+
             verificarVictoria();
 
         } else {

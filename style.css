@@ -19,7 +19,7 @@ h1 {
 .carta {
     width: 100px;
     height: 100px;
-    background-color: #2196f3;
+    background-color: green;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,8 +27,26 @@ h1 {
     color: white;
     cursor: pointer;
     border-radius: 10px;
+    
 }
 
 .carta.volteada {
     background-color: #ff9800;
+}
+
+.movimiento{
+    animation: movimientoCartaCoincidencia 1s ease infinite;
+    transition: animation 0.5s;
+}
+button{
+    margin-top: 20px;
+}
+
+@keyframes movimientoCartaCoincidencia {
+    0% {transform: scale(1.0);} 
+    25% {transform: scale(1.020);}
+    50%{transform: scale(1.040);}
+    75%{transform: scale(1.020);}
+    100%{transform: scale(1.0);}
+    
 }
